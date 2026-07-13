@@ -1,0 +1,30 @@
+{
+  "name": "class-04",
+  "version": "1.0.0",
+  "description": "This is the class code of class 04 of Saylani Mass IT Training Batch 18 MWA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "apis",
+    "http",
+    "http-server",
+    "server",
+    "node",
+    "express",
+    "js",
+    "post",
+    "get",
+    "put",
+    "delete"
+  ],
+  "type": "module",
+  "author": "Sheikh Mohammad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
