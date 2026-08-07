@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Todo App</h1>
+
+      <button class="logout-btn">Logout</button>
+    </header>
+
+    <div class="container">
+      <div class="add-todo">
+        <h2>Add New Task</h2>
+
+        <form>
+          <input type="text" placeholder="Enter todo..." />
+
+          <select>
+            <option>Low Priority</option>
+            <option>Medium Priority</option>
+            <option>High Priority</option>
+          </select>
+
+          <input type="date" />
+
+          <button type="submit">+ Add Todo</button>
+        </form>
+      </div>
+
+      <div class="todo-list">
+        <h2>Today's Tasks</h2>
+
+        <div class="todo-card high">
+          <div>
+            <h3>Finish JavaScript Assignment</h3>
+            <p>🔴 High Priority</p>
+            <span class="due-date">📅 Due: 5 Aug 2026</span>
+          </div>
+
+          <button>Complete</button>
+        </div>
+
+        <div class="todo-card medium">
+          <div>
+            <h3>Study Node.js</h3>
+            <p>🟡 Medium Priority</p>
+            <span class="due-date">📅 Due: 7 Aug 2026</span>
+          </div>
+
+          <button>Complete</button>
+        </div>
+
+        <div class="todo-card low">
+          <div>
+            <h3>Read 20 Pages</h3>
+            <p>🟢 Low Priority</p>
+            <span class="due-date">📅 Due: 10 Aug 2026</span>
+          </div>
+
+          <button>Complete</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
