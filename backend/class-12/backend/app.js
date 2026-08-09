@@ -113,6 +113,34 @@ app.post("/login", async (request, response) => {
     }
 
     const isCorrectPass = await bcrypt.compare(password, userData.password);
+
+    if (!isCorrectPass) {
+      response.json({
+        message: "Invalid email or password",
+        body: null,
+        status: false,
+      });
+      return;
+    }
+
+    const jwtToken = jwt.sign(
+      {
+        _id: userData._id,
+        fullName: userData.fullName,
+      },
+      process.env.JWT_SECRET_KEY,
+    );
+
+    response.json({
+      message: "Login Successfully",
+      body: {
+        data: userData,
+        token: jwtToken,
+      },
+      status: true,
+    });
+
+    console.log(jwtToken);
   } catch (error) {
     response.json({
       message: error.message,
@@ -120,6 +148,26 @@ app.post("/login", async (request, response) => {
       status: false,
     });
   }
+});
+
+const isAuth = () => {};
+
+// Todo CRUD
+
+app.post("/todo", isAuth, async (request, response) => {
+  
+});
+
+app.get("/todo", isAuth, async (request, response) => {
+
+});
+
+app.update("/todo", isAuth, async (request, response) => {
+
+});
+
+app.delete("/todo", isAuth, async (request, response) => {
+
 });
 
 app.listen(PORT, () => {
