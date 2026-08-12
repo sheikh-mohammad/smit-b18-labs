@@ -154,21 +154,13 @@ const isAuth = () => {};
 
 // Todo CRUD
 
-app.post("/todo", isAuth, async (request, response) => {
-  
-});
+app.post("/todo", isAuth, async (request, response) => {});
 
-app.get("/todo", isAuth, async (request, response) => {
+app.get("/todo", isAuth, async (request, response) => {});
 
-});
+app.put("/todo", isAuth, async (request, response) => {});
 
-app.update("/todo", isAuth, async (request, response) => {
-
-});
-
-app.delete("/todo", isAuth, async (request, response) => {
-
-});
+app.delete("/todo", isAuth, async (request, response) => {});
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
