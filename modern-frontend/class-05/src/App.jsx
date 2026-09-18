@@ -26,11 +26,13 @@ const App = () => {
     setCourse("Certified Agentic AI Architect");
   };
 
-  const getSize = (size) => {
-    console.log(size);
+  const [size, setSize] = useState(null);
+  
+  const getSize = (childSize) => {
+    setSize(childSize);
   };
 
-  getSize();
+  console.log(size);
 
   return (
     <div>

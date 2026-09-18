@@ -21,12 +21,17 @@ import React from "react";
 const Navbar = (props) => {
   const { fullName, age, getSize } = props;
   const size = 100;
-  getSize(size);
+
+  const sizeHandler = () => {
+    getSize(size);
+  };
+
   return (
     <div>
       <h1>Navbar</h1>
       <h2>Username: {fullName}</h2>
       <h2>Age: {age}</h2>
+      <button onClick={sizeHandler}>Handle Size</button>
     </div>
   );
 };
