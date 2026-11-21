@@ -1,0 +1,30 @@
+{
+  "name": "class-02",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "nodejs",
+    "limiter",
+    "express-rate-limiter",
+    "rate-limiting"
+  ],
+  "homepage": "https://github.com/sheikh-mohammad/smit-b18-labs#readme",
+  "bugs": {
+    "url": "https://github.com/sheikh-mohammad/smit-b18-labs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheikh-mohammad/smit-b18-labs.git"
+  },
+  "license": "ISC",
+  "author": "Sheikh Mohammad",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express-rate-limit": "^8.7.5",
+    "node-cron": "^4.6.0"
+  }
+}
